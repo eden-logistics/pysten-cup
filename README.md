@@ -41,7 +41,7 @@ In practice, this just means multiplying each component by 85.
 This brings 3 back to its maximum value of 255, and adjusts all other colors accordingly.
 
 # Usage
-**Encoding**
+## Decoding
 Using this program requires two PNG images as input, the second one is encoded into (or hidden in) the first one.
 
 To encode an image, use the -e flag, followed by the public image, then the private image.
@@ -60,7 +60,7 @@ Finally, to render a preview of the renormalized image, use the -p flag. By defa
 
 (**Note**: again, the .png on the end is optional)
 
-**Decoding**
+## Decoding
 To decode an image, use the -d flag, followed by the name of the image to decode.
 
 ```python3 pystencup -d hiddenimage.png```
