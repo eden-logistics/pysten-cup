@@ -32,6 +32,7 @@ To encode an image, use the -e flag, followed by the public image, then the priv
 `python3 pystencup -e public.png private.png`
 
 By default, the resulting output will be named `output.png`. To change this, use the -o flag.
+
 `python3 pystencup -e public.png private.png -o hiddenimage.png`
 (**Note**: the program will always output as a PNG, so adding .png to the end of the output name is optional)
 
