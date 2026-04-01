@@ -18,7 +18,7 @@ Changing these bits hardly changes the color at all, but the data is still store
 
 This means we can hide literally anything digital in it. Usually, another image.
 
-## Decoding
+## Image Color Depth / Normalization
 Hiding an image inside another image requires that the 8 bits of each component be brought down to just 2.
 
 This is fairly simple to do by integer dividing the component by 64.
