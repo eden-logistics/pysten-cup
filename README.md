@@ -46,29 +46,29 @@ Using this program requires two PNG images as input, the second one is encoded i
 
 To encode an image, use the -e flag, followed by the public image, then the private image.
 
-```python3 pystencup -e public.png private.png```
+```python3 pystencup.py -e public.png private.png```
 
 By default, the resulting output will be named `output.png`. To change this, use the -o flag.
 
-```python3 pystencup -e public.png private.png -o hiddenimage.png```
+```python3 pystencup.py -e public.png private.png -o hiddenimage.png```
 
 (**Note**: the program will always output as a PNG, so adding .png to the end of the output name is optional)
 
 Finally, to render a preview of the renormalized image, use the -p flag. By default, the name of the preview image will be the name of the output with "_preview" appended. To change this, specify a filename after the flag.
 
-```python3 pystencup -e public.png private.png -o hiddenimage.png -p hiddenpreview.png```
+```python3 pystencup.py -e public.png private.png -o hiddenimage.png -p hiddenpreview.png```
 
 (**Note**: again, the .png on the end is optional)
 
 ## Decoding
 To decode an image, use the -d flag, followed by the name of the image to decode.
 
-```python3 pystencup -d hiddenimage.png```
+```python3 pystencup.py -d hiddenimage.png```
 
 By default, the decoded image will be the name of the encoded image with "_decoded" appended. To change this, use the -o flag.
 
-```python3 pystencup -d hiddenimage.png -o hiddendecode.png```
+```python3 pystencup.py -d hiddenimage.png -o hiddendecode.png```
 
 By default, the decoded image will automatically be normalized. To render the output as a non-normalized image, use the -n tag. 
 
-```python3 pystencup -d hiddenimage.png -o hiddendecode.png -n```
+```python3 pystencup.py -d hiddenimage.png -o hiddendecode.png -n```
